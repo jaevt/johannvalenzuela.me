@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <!-- Reaction.css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Angular.js 1.5.8 -->
+    <script src="js/shared/angular.min.js"></script>
+
+    <!-- Materialize.css -->
+    <link rel="stylesheet" href="css/materialize.css">
+
+    <!-- Software Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.3.0/font-mfizz.css" />
+
+    <!-- Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- JQuery.js 2.2.4 -->
+    <script type="text/javascript" src="js/shared/jquery-2.2.4.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="js/shared/typed.js"></script>
+
+    <!-- Typed.js letters -->
+    <script>
+      $(function(){
+          $("#element").typed({
+            strings: ["Programmer","Developer"],
+            typeSpeed: 100,
+            startDelay: 200
+          });
+      });
+    </script>
+
+    <script src="https://use.fontawesome.com/a3c3727f14.js"></script>
+  </head>
+
+  <body ng-app="myApp">
+
+    <div class="navbar-fixed">
+      <nav class="light-blue" style="box-shadow: inherit">
+        <div class="nav-wrapper">
+          <!-- Logo en movimiento, usando 100% CSS -->
+          <a href="#home" class="brand-logo center">
+            <div class="circles">
+              <div></div>
+              <div></div>
+              <div></div>
+              <span></span>
+            </div>
+          </a>
+          <!-- Menú para escritorio y tablet -->
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#me">Yo</a></li>
+            <li><a href="#education">Educacion</a></li>
+            <li><a href="#develop">Desarrollos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+          <!-- Menú para pantalla mobile -->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#me">Yo</a></li>
+            <li><a href="#education">Educacion</a></li>
+            <li><a href="#develop">Desarrollos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="home" class="section scrollspy light-blue center" style="background:url('img/back.jpg');background-size:cover; background-blend-mode:multiply;">
+      <div class="container">
+        <h2 class=" white-text" style="padding: 25% 0 25% 0;font-weight: 20">
+          Johann Valenzuela<br>Web <span id="element"></span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="section center">
+      <div class="container">
+        <a href="#me" class="btn-floating btn-large waves-effect waves-light light-blue" style="margin-top:-40px"><i class="material-icons">expand_more</i></a>
+      </div>
+    </div>
+
+    <div id="me" class="section scrollspy" >
+      <div class="container">
+        <div class="row" style="padding: 5% 0 5% 0">
+
+          <div class="col s6 m2 l2 offset-l2">
+            <div class="card" style="margin: 0.5em 0em">
+              <div class="card-image">
+                <img class="responsive-img" style="padding: .5em .5em" src="img/perfil.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="col s6 m10 l6">
+            <h3 class="light-blue-text">Historia</h3>
+            <p class="grey-text flow-text">Hola, soy un Full Stack Web Developer junior de Valparaíso, Chile. Estudiante de Ingeniería de Ejecución
+            en Informática en la Pontificia Universidad Católica de Valparaíso. <br>
+
+
+            </p>
+          </div>
+          <div class="col s12 m12 l12 center">
+            <a class="btn-floating waves-effect light-blue" target="_blank" href="https://github.com/jaevt"><i class="fa fa-github"></i></a>
+            <a class="btn-floating waves-effect light-blue" target="_blank" href="https://electronlabs.slack.com/team/johann.valenzuela"><i class="fa fa-slack"></i></a>
+            <a class="btn-floating waves-effect light-blue" target="_blank" href="https://github.com/jaevt"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-floating waves-effect light-blue" target="_blank" href="https://twitter.com/jaevt"><i class="fa fa-twitter"></i></a>
+            <a class="btn-floating waves-effect light-blue" target="_blank" href="http://stackoverflow.com/users/6393734/johann-valenzuela"><i class="fa fa-stack-overflow"></i></a>
+            <a class="btn-floating waves-effect light-blue" target="_blank" href="https://bitbucket.org/jaevt"><i class="fa fa-bitbucket"></i></a>
+            <a class="btn-floating waves-effect light-blue" target="_blank" href="http://steamcommunity.com/id/s5monolixo"><i class="fa fa-steam"></i></a>
+
+          </div>
+          <div class="col s12 m12 l8 offset-l2">
+            <h5 class="light-blue-text">Información personal</h5>
+            <ul class="collection">
+              <li class="collection-item">
+                <span class="title">Nombre</span>
+                <span class="grey-text right">Johann Valenzuela Torres</span>
+              </li>
+              <li class="collection-item">
+                <span class="title">Teléfono</span>
+                <span class="grey-text right">+56 9 6909 9836</span>
+              </li>
+              <li class="collection-item">
+                <span class="title">Correo</span>
+                <span class="grey-text right">contacto@johannvalenzuela.me</span>
+              </li>
+              <li class="collection-item">
+                <span class="title ">Residencia</span>
+                <span class="grey-text right">Valparaíso, Chile</span>
+              </li>
+            </ul>
+          </div>
+          <div class="divider"></div>
+          <div class="col s12 m6 l6">
+            <h4 class="light-blue-text">¿Por qué Full Stack?</h4>
+            <p class="grey-text flow-text">
+              Partamos por la definición, un Desarrollador Web Full Stack es aquel que tiene
+              experiencia tanto en software del lado del servidor como del lado del cliente, esto involucra
+              conocimientos en base de datos, lenguajes de programación, lenguajes de etiquetas, configuración
+              de sistemas operativos, configuración de servidores y uso de código de terceros.
+            </p><br>
+            <p class="grey-text flow-text">
+              Ahora el motivo: Por lo que he leído una amplia cantidad de casos de desarrolladores que escriben en blogs
+              acerca de Web Develop, pasan de BackEnd o FrontEnd a Full Stack
+            </p>
+          </div>
+          <div class="col s12 m6 l6">
+            <img src="img/full-stack.png" class="responsive-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="education" class="section scrollspy light-blue" style="padding: 10% 0 10% 0">
+      <div class="row" ng-controller="EducationController">
+        <div class="col s12 m12 l3 white-text">
+          <h2>Educación</h2>
+        </div>
+        <div ng-repeat="x in studies" class="col s12 m4 l3 light-blue-text">
+          <div my-study></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="develop" class="section scrollspy container">
+      <div class="row">
+        <div class="col s12">
+          <h2>Desarrollos</h2>
+          <p>Detalles de las tecnologías que ha implementado además de sus lenguajes y frameworks.
+
+          </p>
+        </div>
+        <div ng-repeat="repo in github" class="col s12 m4 l3 light-blue-text">
+          <div github-repo></div>
+        </div>
+      </div>
+      <div class="row" ng-controller="GithubController">
+        <div class="col s12">
+          <h3>Github Repos</h3>
+          <p>Ejemplo de uso de la api.github.v3 y AngularJS utilizando $http.get.
+          </p>
+        </div>
+        <div ng-repeat="repo in github" class="col s12 m4 l3 light-blue-text">
+          <div github-repo></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="section scrollspy light-blue">
+      <div class="row">
+        <form class="col s12 m12 l8 offset-l2" action="mailto:contacto@johannvalenzuela.me" method="post" enctype="text/plain" contact>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+    <!-- Controllers -->
+    <script src="js/controllers/education.ctrl.js"></script>
+    <script src="js/controllers/github.ctrl.js"></script>
+    <!-- Directives -->
+    <script src="js/directives/contact.js"></script>
+
+    <!-- Materialize.min.js -->
+    <script src="js/shared/materialize.min.js"></script>
+    <!-- Eventos Materialize -->
+    <script>
+    $( document ).ready(function(){
+      $(".button-collapse").sideNav();
+      $('.scrollspy').scrollSpy();
+      $('ul.tabs').tabs();
+    });
+    </script>
+  </body>
+</html>
