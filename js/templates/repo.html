@@ -1,19 +1,19 @@
-<div class="card sticky-action">
+<div class="card sticky-action light-blue">
   <div class="card-content center">
-    <span class="card-title">{{repo.name}}
+    <span class="card-title  white-text">{{repo.name}}
     </span>
-    <h5>
-      <i class="material-icons circle">visibility</i>
+    <h5 class=" white-text">
+      <i class="material-icons circle white-text">visibility</i>
       {{repo.watchers_count}}
-      <i class="material-icons circle">star</i>
+      <i class="material-icons circle white-text">star</i>
       {{repo.stargazers_count}}
     </h5>
-    <h6>Branch: {{repo.default_branch}}</h6>
+    <h6 class=" white-text">Branch: {{repo.default_branch}}</h6>
 
-    <a class="activator" href="">Leer descripción</a>
+    <a class="activator  white-text" href="">Leer descripción</a>
   </div>
   <div class="card-action">
-    <a class="white-text btn light-blue" href="{{repo.html_url}}" target="_blank">VER</a>
+    <a class="white btn light-blue-text" href="{{repo.html_url}}" target="_blank">VER</a>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
