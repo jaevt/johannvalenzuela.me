@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-    <!-- Reaction.css -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-
     <!-- Angular.js 1.5.8 -->
     <script src="js/shared/angular.min.js"></script>
 
@@ -40,6 +36,8 @@
   </head>
 
   <body ng-app="myApp">
+    <!-- Google Analytics -->
+    <script src="js/shared/google-analytics.js"></script>
 
     <div class="navbar-fixed">
       <nav class="light-blue" style="box-shadow: inherit">
@@ -80,7 +78,7 @@
 
     <div id="home" class="section scrollspy light-blue center" style="background:url('img/png/mp-02.png') repeat; background-blend-mode:multiply;">
       <div class="container">
-          <h2 class="white-text" style="font-weight: 20; padding:20% 0 15% 0;">
+          <h2 class="white-text" style="font-weight: 20; padding:20% 0 20% 0;">
             Johann Valenzuela<br>Web <span id="element"></span>
           </h2>
       </div>
@@ -102,8 +100,9 @@
           <div class="col s6 m10 l4">
             <h3 class="light-blue-text">Historia</h3>
             <p class="grey-text flow-text">
-              Hola, soy un Full Stack Web Developer junior de Valparaíso, Chile. Admirador del
-              mundo del código abierto y hambriento de proyectos innovadores.
+              Hola, soy un Front-End Web Developer de Valparaíso, Chile. En constante crecimiento,
+              las tecnologías avanzan y no hay que quedar obsoleto. Pendiente a la llegada de proyectos
+              que me permitan demostrar lo que sé y lo que me gusta hacer.
 
             </p>
           </div>
@@ -160,9 +159,7 @@
 
     <div id="develop" class="section scrollspy container">
       <div class="row">
-        <div class="col s12">
-          <h2 class="light-blue-text">Desarrollos</h2>
-        </div>
+        <h2 class="light-blue-text">Desarrollos</h2>
         <div ng-repeat="repo in github" class="col s12 m4 l3 light-blue-text">
           <div github-repo></div>
         </div>
@@ -178,83 +175,50 @@
             <div github-repo></div>
           </li>
         </ul>
-        <div class="col s12 m6 l6 history">
-          <h4 class="light-blue-text">¿Por qué Full Stack?</h4>
-          <p class="grey-text flow-text">
-            Partamos por la definición, un Desarrollador Web Full Stack es aquel que tiene
-            experiencia tanto en software del lado del servidor como del lado del cliente, esto involucra
-            conocimientos en base de datos, lenguajes de programación, lenguajes de etiquetas, configuración
-            de sistemas operativos, configuración de servidores y uso de código de terceros.
-          </p><br>
-          <p class="grey-text" style="line-height:20px">
-            Ahora el motivo: Por lo que he leído una amplia cantidad de casos de desarrolladores que escriben en blogs
-            acerca de Web Develop, pasan de BackEnd o FrontEnd a Full Stack
-          </p>
-        </div>
-        <div class="col s12 m6 l6">
-          <img src="img/full-stack.png" class="responsive-img">
-        </div>
       </div>
-
     </div>
 
     <div id="contact" class="section scrollspy light-blue">
-      <div class="row">
-        <form class="col s12 m12 l8 offset-l2" action="mailto:contacto@johannvalenzuela.me" method="post" enctype="text/plain" contact>
-        </form>
-
-
+      <div class="container row">
+        <div class="col s12 m6 l6">
+          <img src="img/full-stack.png" class="responsive-img">
+        </div>
+        <div class="col s12 m8 l6 offset-m2">
+          <div class="card large">
+              <a class="twitter-timeline" data-height="100%" href="https://twitter.com/JAEVT">Tweets by JAEVT</a>
+          </div>
+        </div>
       </div>
-
     </div>
+
+    <div id="certificates" class="section scrollspy grey lighten-2">
+      <div class="row">
+        <div class="carousel">
+          <a class="carousel-item" href="#one!"><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-Z59SAEM6.jpg">Typescript</a>
+          <a class="carousel-item" href="#two!"><img src="img/back3.jpg">DOOOOOOOOS</a>
+          <a class="carousel-item" href="#three!"><img src="img/back3.jpg">TREEEEEEEES</a>
+          <a class="carousel-item" href="#four!"><img src="img/back3.jpg"></a>
+          <a class="carousel-item" href="#five!"><img src="img/back3.jpg"></a>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="section scrollspy light-blue">
+      <div class="container row ">
+        <div class="col s12 m8 l6 offset-l3 offset-m2" contact></div>
+      </div>
+    </div>
+
 
     <div class="section light-blue darken-2">
       <div class="center">
         <!-- Modal Trigger -->
           <p class="flow-text white-text">¿Quieres detalles de cómo esta construida esta página?</p>
           <a class="waves-effect waves-light btn modal-trigger white light-blue-text" href="#modal1">Averigualo  Aquí</a>
-
       </div>
     </div>
 
     <!-- Modal Structure -->
-    <div id="modal1" class="modal bottom-sheet">
-      <div class="modal-content">
-        <ul class="collection">
-           <li class="collection-item avatar">
-             <i class="fa fa-server circle light-blue"></i>
-             <span class="title">Ubuntu</span>
-             <p>
-               VPS on Digital Ocean
-             </p>
-             <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-           </li>
-           <li class="collection-item avatar">
-             <i class="material-icons circle green">http</i>
-             <span class="title">Nginx</span>
-             <p>
-               HTTP Server
-             </p>
-             <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-           </li>
-           <li class="collection-item avatar">
-             <i class="material-icons circle red">web_asset</i>
-             <span class="title">AngularJS</span>
-             <p>
-               Framework Javascript
-             </p>
-             <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-           </li>
-           <li class="collection-item avatar">
-             <i class="material-icons circle red">web</i>
-             <span class="title">MaterializeCSS</span>
-             <p>
-               Framework CSS
-             </p>
-             <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-           </li>
-         </ul>
-      </div>
+    <div id="modal1" class="modal bottom-sheet" modal-structure>
     </div>
 
     <!-- Modules -->
@@ -262,9 +226,14 @@
     <!-- Controllers -->
     <script src="js/controllers/education.ctrl.js"></script>
     <script src="js/controllers/github.ctrl.js"></script>
+    <script src="js/controllers/testimonial.ctrl.js"></script>
     <!-- Directives -->
     <script src="js/directives/contact.js"></script>
+    <script src="js/directives/modal-structure.js"></script>
+    <script src="js/directives/twitter-timeline.js"></script>
 
+    <!-- Twitter User Timeline -->
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <!-- Materialize.min.js -->
     <script src="js/shared/materialize.js"></script>
     <!-- Eventos Materialize -->
@@ -273,6 +242,10 @@
       $(".button-collapse").sideNav();
       $('.scrollspy').scrollSpy();
       $('ul.tabs').tabs();
+      $('.carousel').carousel({
+
+        indicators:true
+      });
       $('.modal-trigger').leanModal();
       Materialize.scrollFire([
         {
