@@ -1,5 +1,5 @@
 app.controller('GithubController', function($scope, $http) {
-  $http.get("https://api.github.com/users/jaevt/repos",{
+  $http.get("https://api.github.com/users/johannvalenzuela/repos",{
     headers:  {
         'Accept': 'application/vnd.github.v3+json'
     }
